@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Function Callbacks</title>
+</head>
+<body>
+    <script>
+        function prepareFood(tableNum, items, callback)
+        {
+            console.log('Preparing food for items : ', items);
+            callback(tableNum, items);
+        }
+
+        function serveFood(tableNum, items) 
+        {
+            console.log('Serving food for items : ', items);
+        }
+
+        var tableNum = 100;
+        var items = ["Burger", "Pasta", "Coke"];
+        prepareFood(tableNum, items, serveFood);
+    </script>
+This file shows how Functions can be called back in Console.
+</body>
+</html>
